@@ -1,0 +1,10 @@
+/target
+Cargo.lock
+proptest-regressions/
+/shardring/pkg/
+
+# editors / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store

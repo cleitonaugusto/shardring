@@ -1,0 +1,21 @@
+[package]
+name = "shardring-fuzz"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[[bin]]
+name = "fuzz_ring"
+path = "fuzz_ring.rs"
+
+[[bin]]
+name = "fuzz_migration"
+path = "fuzz_migration.rs"
+
+[[bin]]
+name = "fuzz_bounded"
+path = "fuzz_bounded.rs"
+
+[dependencies]
+shardring = { path = "..", features = ["std", "adaptive-ring", "migration", "serialization"] }
+libfuzzer-sys = "0.4"
