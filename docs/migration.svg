@@ -4,32 +4,26 @@
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
     </marker>
   </defs>
-  <style>
-    .t  { font: 13px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #64748b; }
-    .tb { font: 600 14px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #475569; }
-    .tm { font: 11px ui-monospace, SFMono-Regular, Menlo, monospace; fill: #64748b; }
-    .tl { font: 600 11px ui-monospace, SFMono-Regular, Menlo, monospace; fill: #475569; }
-  </style>
 
-  <text x="20" y="26" class="tb">Moving to a new ring configuration, a slice at a time</text>
+  <text x="20" y="26" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" font-weight="600" fill="#475569">Moving to a new ring configuration, a slice at a time</text>
 
   <!-- incoming keys -->
   <rect x="20" y="96" width="112" height="46" rx="6" fill="none" stroke="#94a3b8" stroke-width="1.5"/>
-  <text x="76" y="118" class="tm" text-anchor="middle">incoming</text>
-  <text x="76" y="134" class="tm" text-anchor="middle">keys</text>
+  <text x="76" y="118" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#64748b">incoming</text>
+  <text x="76" y="134" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#64748b">keys</text>
 
   <!-- split -->
   <line x1="132" y1="108" x2="252" y2="72" stroke="#64748b" stroke-width="1.5" marker-end="url(#aSlate)"/>
   <line x1="132" y1="130" x2="252" y2="182" stroke="#2563eb" stroke-width="2" marker-end="url(#aSlate)"/>
-  <text x="180" y="78" class="tl">90%</text>
-  <text x="180" y="176" class="tl" fill="#2563eb">10%</text>
+  <text x="180" y="78" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" font-weight="600" fill="#475569">90%</text>
+  <text x="180" y="176" fill="#2563eb" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" font-weight="600">10%</text>
 
   <!-- old ring -->
   <circle cx="300" cy="66" r="40" fill="none" stroke="#94a3b8" stroke-width="2"/>
   <circle cx="300" cy="26" r="5" fill="#64748b"/>
   <circle cx="335" cy="86" r="5" fill="#64748b"/>
   <circle cx="265" cy="86" r="5" fill="#64748b"/>
-  <text x="300" y="70" class="tm" text-anchor="middle">old ring</text>
+  <text x="300" y="70" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#64748b">old ring</text>
 
   <!-- new ring -->
   <circle cx="300" cy="196" r="40" fill="none" stroke="#2563eb" stroke-width="2"/>
@@ -37,24 +31,24 @@
   <circle cx="335" cy="216" r="5" fill="#2563eb"/>
   <circle cx="265" cy="216" r="5" fill="#2563eb"/>
   <circle cx="300" cy="236" r="5" fill="#2563eb"/>
-  <text x="300" y="200" class="tm" text-anchor="middle" fill="#2563eb">new ring</text>
+  <text x="300" y="200" text-anchor="middle" fill="#2563eb" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">new ring</text>
 
   <!-- rollout control -->
-  <text x="404" y="42" class="tb">set_rollout(0.10 → 1.0)</text>
+  <text x="404" y="42" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" font-weight="600" fill="#475569">set_rollout(0.10 → 1.0)</text>
   <rect x="404" y="56" width="300" height="14" rx="7" fill="#e2e8f0"/>
   <rect x="404" y="56" width="30"  height="14" rx="7" fill="#2563eb"/>
-  <text x="404" y="88" class="t">a key stays on the same side while the rollout is unchanged,</text>
-  <text x="404" y="106" class="t">so a live session does not flip back and forth.</text>
+  <text x="404" y="88" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" fill="#64748b">a key stays on the same side while the rollout is unchanged,</text>
+  <text x="404" y="106" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" fill="#64748b">so a live session does not flip back and forth.</text>
 
   <line x1="404" y1="126" x2="740" y2="126" stroke="#cbd5e1" stroke-width="1"/>
 
-  <text x="404" y="152" class="tb">Shadow mode</text>
-  <text x="404" y="174" class="t">get_shadow(key) answers from both rings, so you can</text>
-  <text x="404" y="192" class="t">compare the old and the new owner before committing.</text>
+  <text x="404" y="152" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="14" font-weight="600" fill="#475569">Shadow mode</text>
+  <text x="404" y="174" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" fill="#64748b">get_shadow(key) answers from both rings, so you can</text>
+  <text x="404" y="192" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" fill="#64748b">compare the old and the new owner before committing.</text>
 
   <rect x="404" y="208" width="140" height="34" rx="5" fill="none" stroke="#94a3b8" stroke-width="1.5"/>
-  <text x="474" y="230" class="tm" text-anchor="middle">old → node-b</text>
+  <text x="474" y="230" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#64748b">old → node-b</text>
   <rect x="560" y="208" width="144" height="34" rx="5" fill="none" stroke="#2563eb" stroke-width="1.5"/>
-  <text x="632" y="230" class="tm" text-anchor="middle" fill="#2563eb">new → node-d</text>
-  <text x="404" y="266" class="t">differences are yours to inspect before you move traffic</text>
+  <text x="632" y="230" text-anchor="middle" fill="#2563eb" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">new → node-d</text>
+  <text x="404" y="266" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" fill="#64748b">differences are yours to inspect before you move traffic</text>
 </svg>

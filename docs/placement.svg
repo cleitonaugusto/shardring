@@ -7,17 +7,11 @@
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563eb"/>
     </marker>
   </defs>
-  <style>
-    .t  { font: 13px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #64748b; }
-    .tb { font: 600 13px system-ui, -apple-system, "Segoe UI", sans-serif; fill: #475569; }
-    .tk { font: 600 12px ui-monospace, SFMono-Regular, Menlo, monospace; fill: #2563eb; }
-    .tm { font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; fill: #64748b; }
-  </style>
 
   <!-- ring -->
   <circle cx="210" cy="165" r="110" fill="none" stroke="#94a3b8" stroke-width="2"/>
-  <text x="210" y="160" class="tb" text-anchor="middle">hash ring</text>
-  <text x="210" y="180" class="tm" text-anchor="middle">u32 space</text>
+  <text x="210" y="160" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#475569">hash ring</text>
+  <text x="210" y="180" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#64748b">u32 space</text>
 
   <!-- virtual nodes: a=blue, b=emerald, c=amber -->
   <circle cx="210" cy="55"  r="7" fill="#2563eb"/>
@@ -31,27 +25,27 @@
 
   <!-- key lands between two vnodes, walks clockwise -->
   <line x1="40" y1="60" x2="139" y2="103" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arrowBlue)"/>
-  <text x="36" y="48" class="tk">hash("session:42")</text>
+  <text x="36" y="48" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="600" fill="#2563eb">hash("session:42")</text>
   <path d="M 152 74 A 110 110 0 0 1 200 50" fill="none" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arrowBlue)"/>
-  <text x="196" y="35" class="tk" text-anchor="middle">walks clockwise</text>
+  <text x="196" y="35" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="600" fill="#2563eb">walks clockwise</text>
 
   <!-- legend / nodes -->
   <circle cx="400" cy="70" r="7" fill="#2563eb"/>
-  <text x="418" y="75" class="tb">node-a</text>
-  <text x="482" y="75" class="t">3 virtual nodes</text>
+  <text x="418" y="75" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#475569">node-a</text>
+  <text x="482" y="75" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" fill="#64748b">3 virtual nodes</text>
   <circle cx="400" cy="100" r="7" fill="#059669"/>
-  <text x="418" y="105" class="tb">node-b</text>
-  <text x="482" y="105" class="t">3 virtual nodes</text>
+  <text x="418" y="105" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#475569">node-b</text>
+  <text x="482" y="105" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" fill="#64748b">3 virtual nodes</text>
   <circle cx="400" cy="130" r="7" fill="#d97706"/>
-  <text x="418" y="135" class="tb">node-c</text>
-  <text x="482" y="135" class="t">2 virtual nodes</text>
+  <text x="418" y="135" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#475569">node-c</text>
+  <text x="482" y="135" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" fill="#64748b">2 virtual nodes</text>
 
   <line x1="400" y1="158" x2="736" y2="158" stroke="#cbd5e1" stroke-width="1"/>
 
-  <text x="400" y="185" class="tb">Placement depends only on node ids</text>
-  <text x="400" y="207" class="t">so two processes that build a ring from the same</text>
-  <text x="400" y="225" class="t">nodes route every key to the same place.</text>
+  <text x="400" y="185" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#475569">Placement depends only on node ids</text>
+  <text x="400" y="207" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" fill="#64748b">so two processes that build a ring from the same</text>
+  <text x="400" y="225" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" fill="#64748b">nodes route every key to the same place.</text>
 
-  <text x="400" y="257" class="tb">Adding a node moves ~1/N of the keys</text>
-  <text x="400" y="279" class="t">not the whole mapping — the rest stay put.</text>
+  <text x="400" y="257" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" font-weight="600" fill="#475569">Adding a node moves ~1/N of the keys</text>
+  <text x="400" y="279" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" fill="#64748b">not the whole mapping — the rest stay put.</text>
 </svg>
