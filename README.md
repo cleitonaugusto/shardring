@@ -82,12 +82,12 @@ Placement derives only from node ids, so two processes that build a ring from th
 
 ```mermaid
 flowchart TD
-    A[Do buckets have stable names<br/>and come and go?] -->|No, fixed 0..n| J[jump_consistent_hash<br/>O(1), no allocation]
-    A -->|Yes| B[Do you need protection<br/>against a hot node?]
-    B -->|Yes| C[BoundedRing<br/>cap + overflow]
-    B -->|No| D[Is lookup throughput<br/>more important than memory?]
-    D -->|Yes| E[MaglevTable<br/>flat table, fixed size]
-    D -->|No| F[CompactRing<br/>weighted virtual nodes]
+    A{"Do buckets have stable names,<br/>joining and leaving over time?"} -->|"No — fixed 0..n"| J["jump_consistent_hash<br/>O(1), no allocation"]
+    A -->|Yes| B{"Do you need protection<br/>against a hot node?"}
+    B -->|Yes| C["BoundedRing<br/>per-node cap with overflow"]
+    B -->|No| D{"Is lookup throughput worth<br/>spending memory on?"}
+    D -->|Yes| E["MaglevTable<br/>flat table, fixed size"]
+    D -->|No| F["CompactRing<br/>weighted virtual nodes"]
 ```
 
 | Module | What it does |
