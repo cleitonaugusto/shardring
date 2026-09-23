@@ -1,5 +1,7 @@
 # shardring
 
+> Repository landing page with diagrams: <https://github.com/cleitonaugusto/shardring>
+
 Consistent hashing in Rust with **bounded loads**, **live migration between ring configurations**, and a compact in-memory layout. Works on `wasm32`.
 
 [![License](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-blue)](#license)
